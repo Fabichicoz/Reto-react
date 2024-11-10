@@ -1,0 +1,82 @@
+/* Fondo general de la página */
+body {
+    background-color: #50e47a;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Contenedor de la aplicación */
+  .todo-app {
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(246, 244, 244, 0.774);
+    background-color: #05796d;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilo de los botones */
+  button {
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border-radius: 6px; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    align-self: flex-end;
+    margin: 5px;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    background-color: #7ae81a;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-items: right; 
+    margin: 5px;
+
+  }
+  
+  button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e29016;    
+  }
+  
+  /* Efecto de las tareas completadas */
+  .completed-task {
+    text-decoration: line-through;
+    color: #dceb0b; 
+    opacity: 0.6;
+  }
+  
+  /* Estilo de los inputs */
+  input {
+    border-radius: 200px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #d1d5db;
+  }
+  
+  input:focus {
+    border-color: #3b82f6; /* Azul */
+    outline: none;
+  }
+  
+  /* Estilo para el título */
+  h1 {
+    color: #f3f4f6; 
+    text-shadow: 1px 1px 4px rgba(238, 238, 238, 0.839);
+  }
+  
+  /* Efectos de hover en ítems */
+  .task-item:hover {
+    background-color: #f1f5f9; 
+    transition: background-color 0.3s;
+  }
+  
